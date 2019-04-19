@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Hello World Test </title>
+<style>
+	h1 {
+		font-family: "Baskerville";
+
+		width: auto;
+		height: 50px;
+		background-color: #dee9f9; 
+		text-align: center;
+		text-transform: uppercase;
+		padding:  40px;
+}
+
+		li{
+			color: black;
+		}
+
+		li:hover{
+			color: white;
+
+		}
+
+	.grid {
+			display:grid;
+			grid-template-columns: 100px auto 300px;
+			grid-template-rows: 400px 500px;
+			margin:  20px;
+			grid-gap: 10px;
+}
+ 	
+ 	.box{
+ 			border: 0px solid black;
+
+ 	}
+
+	.box1{
+ 			background-color: #405e8c;
+ 			font-family: "Baskerville";
+ 			border: 1px dashed blue;
+ 			text-align: auto;
+ 			margin: 40px;
+ 			height: 300px;
+
+
+ 	}
+ 	.box2{
+ 			background-color: #387eea;
+ 			font-family: "Baskerville";
+ 			width:200px;
+ 			text-align: auto;
+ 			padding: 20px;
+
+
+ 	}
+ 	.block{
+ 			background-color: #97befc;
+ 			padding: 40px;
+ 			text-align: center;
+ 			grid-column-start: 1;
+ 			grid-column-end:3;
+
+ 	}
+ 	.imgsize {
+			width: 50%;
+			height: auto;
+			object-fit: cover;
+
+		}
+
+		.box3 {
+			width: 500px;
+			height: 500px;
+			margin:30px;
+			padding:25px;
+			background-color: blue;
+			border-radius: 50%;
+			transition: all 0.3s ease-in;
+		}
+		.box3:hover{
+			border-radius:20%;
+			opacity: 0.3;
+			background-color: #0567ff;
+			transform-origin: center;
+			transform: scale(.5) translateY(10px);
+		}
+		.box4 {
+			width: 100px;
+			height: 100px;
+			background-color: blue;
+			margin: 200px;
+			padding: 100px;
+			border-radius: 25%;
+			transition: all 0.2s ease-in;
+		}
+		.box4:hover{
+			border-radius:50%;
+			opacity: 0.3;
+			background-color: #234d8e;
+			transform-origin: bottom right;
+			transform: scale(.75);
+		}
+
+
+</style>
+</head>
+<body>
+	<div>
+		<h1> Hello World</h1>
+	</div>
+
+<div class="grid">
+	<div class="block">
+		<a href="https://www.google.com/imghp"> 
+			<img src="vv_love.jpg" class="imgsize">
+		</a>
+
+	</div>
+	<div class="box">
+		<div class="box1">
+		
+		<ul>
+			<li> List 1</li>
+			<li> List 2</li>
+		</ul>
+	</div>
+	</div>
+
+	<div class="box2">
+		<p> Hello this is a test, I think that it's coming out okay thus far.</p>
+		<a href="https://www.google.com/search?q=hex+color+picker&oq=he&aqs=chrome.0.69i59j69i60l3j69i61j69i57.591j0j7&sourceid=chrome&ie=UTF-8">
+			<p> Here is a link to pick a hex code.</p>
+		</a>
+	</div>
+
+
+	<div class="box">
+		<div class="box4">
+			
+		</div>
+
+
+	</div>
+	<!--Animation div -->
+<div>
+	<div class="box3"></div>
+</div>
+
+
+
+
+</body>
+
+</html>
