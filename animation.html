@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Animation </title>
+	<style type="text/css">
+		.box {
+			width: 500px;
+			height: 500px;
+			background-color: blue;
+			border-radius: 50%;
+			transition: all 0.3s ease-in;
+		}
+		.box:hover{
+			border-radius:20%;
+			opacity: 0.3;
+			background-color: orange;
+			transform-origin: bottom right;
+			transform: scale(.5) translateX(500px);
+
+		}
+
+		.hover2{
+			margin: 10px;
+			width: 400px;
+			height: 400px;
+			background-color: black;
+			transition: all 0.3s ease;
+		}
+
+		.hover2:hover{
+			transform-origin: bottom left;
+			transform: skewX(-10deg);
+		}
+
+		.ani {
+			background-color: red;
+			width: 400px;
+			height: 500px;
+			animation: animation 3s ease-in infinite;
+		}
+@keyframes animation {
+			0% {
+				transform:scale(1);
+				background-color: green;
+			}
+			50%{
+				transform:scale(2);
+				background-color: yellow;
+			}
+			90%{
+				transform: scale(0.5);
+			}
+			100%{
+				transform: scale(1);
+			}
+}
+
+	</style>
+
+
+
+
+</head>
+
+
+
+<body>
+	<div class="box"></div>
+	<div class="hover2"></div>
+	<div class="ani"></div>
+
+</body>
+</html>
